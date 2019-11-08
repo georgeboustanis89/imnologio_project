@@ -9,20 +9,20 @@ function makeContentObj(){
 
     // for every line - array's element determine if it is chord/lyric/space/title line
     content.forEach(el => {
-        if(el.match(/^>/)){
-            title = `<div class='title'>${el.slice(1)}</div>`;
-            number = el.slice(1).split('.')[0];
+        if(el.match(/^>/)){     //if is title line
+            title = `${el.slice(1)}`;
+            number = title.split('.')[0];       //from title we keep the number (before '.')
         }
-        else if(el == '')
-            text += `"<div class='space'>&nbsp;</div>",\n\t\t`;
+        else if(el == '')      //
+            text += `{"space" : ""},\n\t\t`;
         else if(el.match(/^@.*/))
-            text += `"<div class='chords'>${el.replace('@',' ')}</div>",\n\t\t`;
+            text += `{"chords" : "${el.replace('@',' ')}"},\n\t\t`;
         else
-            text += `"<div class='lyrics'>${el}</div>",\n\t\t`;
+            text += `{"lyrics" : "${el}"},\n\t\t`;
     });
 
     // delete 4 last characters (last comma needs to be deleted) and 'close' the array and the whole object
-    text = text.slice(0,-4) + '\n\t\t]\n}';
+    text = text.slice(0,-4) + '\n\t]\n}';
     let out;
 
     // form the final output for the text area id='obj-content' as string
