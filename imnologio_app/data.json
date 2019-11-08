@@ -1,0 +1,82 @@
+[
+    {
+	"number" : "1",
+	"title" : "<div class='title'>1. ΕΙΡΗΝΗ ΣΟΥ ΔΙΝΩ</div>",
+	"text" : [
+		"<div class='chords'>   C        G           Dm                Am</div>",
+		"<div class='lyrics'>Ειρήνη Σου δίνω, την ειρήνη μου δίνω σ’ εσέ,</div>",
+		"<div class='chords'>                                  G-Em</div>",
+		"<div class='lyrics'>όπως φροντίζω τα πουλιά του ουρανού</div>",
+		"<div class='chords'>                     Am</div>",
+		"<div class='lyrics'>θα φροντίσω και για σε.</div>",
+		"<div class='space'> </div>",
+		"<div class='lyrics'>Ειρήνη σου δίνω, την ειρήνη μου δίνω σ’ εσέ,</div>",
+		"<div class='lyrics'>όπως στέλνω τη βροχή πάνω στη γη</div>",
+		"<div class='lyrics'>θα ευλογήσω και εσέ.</div>",
+		"<div class='space'> </div>",
+		"<div class='lyrics'>Επωδός</div>",
+		"<div class='lyrics'>Μόνο εμπιστεύσου με παιδί μου καλό</div>",
+		"<div class='lyrics'>και πίστεψε εγώ πως σ’ αγαπώ</div>",
+		"<div class='lyrics'>και η θλίψη που έχει η ματιά σου</div>",
+		"<div class='lyrics'>θα χαθεί με τα βουνά μαζί</div>",
+		"<div class='lyrics'>που βρίσκονται μπροστά σου</div>",
+		"<div class='lyrics'>και η χαρά μου θα γεμίσει την καρδιά σου.</div>",
+		"<div class='space'> </div>",
+		"<div class='lyrics'>Ειρήνη Σου δίνω, την ειρήνη μου δίνω σ’ εσέ,</div>",
+		"<div class='lyrics'>ας ησυχάσει η καρδιά σου η κουρασμένη</div>",
+		"<div class='lyrics'>δεν σ’ αφήνω εγώ ποτέ.</div>",
+		"<div class='space'> </div>",
+		"<div class='lyrics'>Ειρήνη Σου δίνω, την ειρήνη μου δίνω σ’ εσέ,</div>",
+		"<div class='lyrics'>όπως ο ήλιος δεν μπορεί ποτέ να σβήσει</div>",
+		"<div class='lyrics'>έτσι και η αγάπη μου για σε.</div>"
+		]
+    },
+    {
+        "number" : "",
+        "title" : "",
+        "text" : [
+            "<div class='lyrics'>113. Ω, ΤΙ ΘΑΥΜΑΣΤΗ ΔΥΝΑΜΗ ΘΕΟΥ</div>",
+            "<div class='space'> </div>",
+            "<div class='lyrics'>Ω, τί θαυμαστή δύναμη Θεού!</div>",
+            "<div class='lyrics'>Σώζει κάθε δειλή ψυχή,</div>",
+            "<div class='lyrics'>να εμπιστευθείς εις τον Ιησού</div>",
+            "<div class='lyrics'>και θα σου δώσει την άφεση.</div>",
+            "<div class='space'> </div>",
+            "<div class='lyrics'>Επωδός</div>",
+            "<div class='lyrics'>Με τις πληγές του Αμνού</div>",
+            "<div class='lyrics'>του θανόντα Χριστού,</div>",
+            "<div class='lyrics'>εσωθήκαμε ,ναι ,σωθήκαμε</div>",
+            "<div class='lyrics'>με τις πληγές του Αμνού.</div>",
+            "<div class='space'> </div>",
+            "<div class='lyrics'>Είναι δύναμη εις το αίμα Του</div>",
+            "<div class='lyrics'>ν’ αφαιρέσει την ενοχή,</div>",
+            "<div class='lyrics'>να σου δώσει τη θεραπεία σου</div>",
+            "<div class='lyrics'>εις το σώμα σου και στην ψυχή.</div>",
+            "<div class='space'> </div>",
+            "<div class='lyrics'>Βλέπε εις τον εσταυρωμένο Χριστό</div>",
+            "<div class='lyrics'>για να απαλλαχθείς ευθύς,</div>",
+            "<div class='lyrics'>εις το άγιον έργο πίστευσε</div>",
+            "<div class='lyrics'>και αμέσως εσύ θα σωθείς.</div>",
+            "<div class='space'> </div>",
+            "<div class='lyrics'>Παίρνει όλες σου τις ασθένειες,</div>",
+            "<div class='lyrics'>πόνους, θλίψεις και ενοχή.</div>",
+            "<div class='lyrics'>Παραδέξου Τον σαν Σωτήρα σου,</div>",
+            "<div class='lyrics'>να σου δώσει αιώνια ζωή.</div>"
+            ]
+    },
+    {
+        "number" : "",
+        "title" : "",
+        "text" : [
+            "<div class='lyrics'>19. ΕΛΑ ΚΙ ΕΣΥ</div>",
+            "<div class='chords'>         D-G          -D</div>",
+            "<div class='lyrics'>Έλα κι εσύ να δώσεις δόξα σ’ Αυτόν. (3)</div>",
+            "<div class='chords'> Bm    D</div>",
+            "<div class='lyrics'>Δόξα Θεό.</div>",
+            "<div class='lyrics'>Μας αγαπά το έδειξε στο Σταυρό. (3)</div>",
+            "<div class='lyrics'>Δόξα Θεό.</div>",
+            "<div class='lyrics'>Θα ξαναρθεί για να μας πάρει ψηλά. (3)</div>",
+            "<div class='lyrics'>Δόξα Θεό .</div>"
+            ]
+    }
+]
