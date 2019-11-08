@@ -78,5 +78,19 @@
             "<div class='lyrics'>Θα ξαναρθεί για να μας πάρει ψηλά. (3)</div>",
             "<div class='lyrics'>Δόξα Θεό .</div>"
             ]
+    },
+    {
+        "number" : "19",
+        "title" : "<div class='title'>19. ΕΛΑ ΚΙ ΕΣΥ</div>",
+        "text" : [
+            "<div class='chords'>         D-G          -D</div>",
+            "<div class='lyrics'>Έλα κι εσύ να δώσεις δόξα σ’ Αυτόν. (3)</div>",
+            "<div class='chords'> Bm    D</div>",
+            "<div class='lyrics'>Δόξα Θεό.</div>",
+            "<div class='lyrics'>Μας αγαπά το έδειξε στο Σταυρό. (3)</div>",
+            "<div class='lyrics'>Δόξα Θεό.</div>",
+            "<div class='lyrics'>Θα ξαναρθεί για να μας πάρει ψηλά. (3)</div>",
+            "<div class='lyrics'>Δόξα Θεό .</div>"
+            ]
     }
 ]

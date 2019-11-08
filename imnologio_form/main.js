@@ -31,3 +31,9 @@ function makeContentObj(){
     document.getElementById('obj-content').innerHTML = out;
 
 }
+
+function copyObjText(){
+    let htmlEl = document.getElementById('obj-content');
+    htmlEl.select();
+    document.execCommand("copy");
+}
