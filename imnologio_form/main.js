@@ -14,7 +14,7 @@ function makeContentObj(){
             number = title.split('.')[0];       //from title we keep the number (before '.')
         }
         else if(el == '')      //
-            text += `{"space" : ""},\n\t\t`;
+            text += `{"space" : "<br>"},\n\t\t`;
         else if(el.match(/^@.*/))
             text += `{"chords" : "${el.replace('@',' ')}"},\n\t\t`;
         else

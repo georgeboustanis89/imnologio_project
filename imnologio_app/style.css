@@ -46,6 +46,9 @@ a{
     margin-top: 3em;
     display: flex;
     flex-direction: column;
+    white-space: pre;
+    font-family: monospace;
+    font-size: 1.3em;
 }
 
 .hymn-button{

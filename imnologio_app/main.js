@@ -22,3 +22,14 @@ function showContents(data){
 
     document.getElementsByClassName('content')[0].innerHTML = out;
 }
+
+function showText(data,number){
+    let out = '';
+    let element = data[number-1]["text"];     //get the text field of number-1 object in the data array  
+    
+    element.forEach(line => {
+        let key = Object.keys(line)[0];
+        out += `<div class='${key}'>${line[key]}</div>`;
+    });
+    document.getElementsByClassName('content')[0].innerHTML = out;
+}
