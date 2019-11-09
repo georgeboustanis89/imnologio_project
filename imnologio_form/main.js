@@ -13,10 +13,12 @@ function makeContentObj(){
             title = `${el.slice(1)}`;
             number = title.split('.')[0];       //from title we keep the number (before '.')
         }
-        else if(el == '')      //
+        else if(el == '')      //if theres a line break
             text += `{"space" : "<br>"},\n\t\t`;
-        else if(el.match(/^@.*/))
+        else if(el.match(/^@.*/))    //if line is chord line
             text += `{"chords" : "${el.replace('@',' ')}"},\n\t\t`;
+        else if(el == 'Επωδός')
+            text += `{"rep" : "${el}"},\n\t\t`;
         else
             text += `{"lyrics" : "${el}"},\n\t\t`;
     });
