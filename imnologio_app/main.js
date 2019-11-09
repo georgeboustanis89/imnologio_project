@@ -13,9 +13,10 @@ function sendRequest(filePath,onLoadFun,...params){
     }
 }
 
+// data -> json/array from the ajax call
 function showContents(data){
     let out = '';
-
+    // el -> every object in the data array
     data.forEach(el => {
         out += getButton(el) + '<br>';
     })
@@ -23,17 +24,21 @@ function showContents(data){
     document.getElementsByClassName('content')[0].innerHTML = out;
 }
 
-function showText(data,number){
+// dataArr -> json/array from ajax call
+// number -> the hymn's number to be shown
+function showText(dataArr,number){
     let out = '';
-    let element = data[number-1]["text"];     //get the text field of number-1 object in the data array  
+    let obj = dataArr[number-1]["text"];     //get the text field of number-1 object in the data array  
     
-    element.forEach(line => {
-        let key = Object.keys(line)[0];
+    obj.forEach(line => {
+        let key = Object.keys(line)[0];     //get the value of the first key of the accessed object ("title" : [{"lyrics": "..."},{"chords" : "..."},{...}])
         out += `<div class='${key}'>${line[key]}</div>`;
     });
     document.getElementsByClassName('content')[0].innerHTML = out;
 }
 
-function getButton(element){
-    return `<button class='hymn-button'>${element.title}</div>`;
+// obj -> an object from json file/array
+function getButton(obj){
+    return `<button class='hymn-button'
+        onclick="sendRequest('./data.json',showText,${obj.number})">${obj.title}</div>`;
 }
