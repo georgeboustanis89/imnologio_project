@@ -51,6 +51,13 @@ a{
     font-size: 1.3em;
 }
 
+.hymn-title{
+    text-align: center;
+    font-size:2em;
+    color:white;
+    background-color: lightblue;
+}
+
 .hymn-button{
     padding: 1em;
     margin: 10px;
@@ -68,6 +75,10 @@ a{
 
 .chords{
     color: red;
+}
+
+.space{
+    padding: 0.5em;
 }
 
 .border{

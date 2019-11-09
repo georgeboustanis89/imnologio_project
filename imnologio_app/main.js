@@ -27,7 +27,7 @@ function showContents(data){
 // dataArr -> json/array from ajax call
 // number -> the hymn's number to be shown
 function showText(dataArr,number){
-    let out = '';
+    let out = `<div class="hymn-title">${dataArr[number-1]["title"]}</div>`;
     let obj = dataArr[number-1]["text"];     //get the text field of number-1 object in the data array  
     
     obj.forEach(line => {
