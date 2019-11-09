@@ -17,7 +17,7 @@ function showContents(data){
     let out = '';
 
     data.forEach(el => {
-        out += `${el.title}<br>`;
+        out += getButton(el) + '<br>';
     })
 
     document.getElementsByClassName('content')[0].innerHTML = out;
@@ -32,4 +32,8 @@ function showText(data,number){
         out += `<div class='${key}'>${line[key]}</div>`;
     });
     document.getElementsByClassName('content')[0].innerHTML = out;
+}
+
+function getButton(element){
+    return `<button class='hymn-button'>${element.title}</div>`;
 }
