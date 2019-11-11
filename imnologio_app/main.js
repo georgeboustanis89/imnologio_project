@@ -27,13 +27,14 @@ function showContents(data){
 // dataArr -> json/array from ajax call
 // number -> the hymn's number to be shown
 function showText(dataArr,number){
-    let out = `<div class="hymn-title">${dataArr[number-1]["title"]}</div>`;
+    let out = `<div class="hymn-title">${dataArr[number-1]["title"]}</div><div class="hymn">`;
     let obj = dataArr[number-1]["text"];     //get the text field of number-1 object in the data array  
     
     obj.forEach(line => {
         let key = Object.keys(line)[0];     //get the value of the first key of the accessed object ("title" : [{"lyrics": "..."},{"chords" : "..."},{...}])
         out += `<div class='${key}'>${line[key]}</div>`;
     });
+    out += "</div>";
     document.getElementsByClassName('content')[0].innerHTML = out;
 }
 

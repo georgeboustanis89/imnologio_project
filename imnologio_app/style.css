@@ -56,6 +56,10 @@ a{
     background-color: lightblue;
 }
 
+.hymn{
+    overflow: scroll;
+}
+
 .hymn-button{
     padding: 1em;
     margin: 10px;
@@ -74,7 +78,6 @@ a{
 
 .chords{
     color: red;
-    overflow: hidden;
     white-space: pre;
     font-family: monospace;
     font-size: 1.3em;
@@ -84,7 +87,6 @@ a{
     white-space: pre;
     font-family: monospace;
     font-size: 1.3em;
-    overflow: hidden;
 }
 
 .space{
