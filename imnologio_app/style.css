@@ -39,11 +39,6 @@ a{
 }
 
 .content{
-    /*
-    height:500px;
-    overflow-y: scroll;
-    */
-    border : red solid 2px;
     margin-top: 3em;
     display: flex;
     flex-direction: column;
@@ -51,7 +46,7 @@ a{
 
 .hymn-title{
     text-align: center;
-    font-size:1.5em;
+    font-size:1.9em;
     color:white;
     background-color: lightblue;
 }
@@ -80,13 +75,13 @@ a{
     color: red;
     white-space: pre;
     font-family: monospace;
-    font-size: 1.3em;
+    font-size: 1.7em;
 }
 
 .lyrics{
     white-space: pre;
     font-family: monospace;
-    font-size: 1.3em;
+    font-size: 1.7em;
 }
 
 .space{
@@ -123,5 +118,14 @@ a{
 
     #sendReq{
         font-size: 9px;
+    }
+
+    #wrapper{
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    .hymn-title{
+        font-size:1.4em;
     }
 }
