@@ -43,3 +43,25 @@ function getButton(obj){
     return `<button class='hymn-button'
         onclick="sendRequest('./data.json',showText,${obj.number})">${obj.title}</div>`;
 }
+
+function toolbarToggle(){
+    let el = document.getElementsByClassName('toolbar')[0];
+    if(window.getComputedStyle(el).display == 'none')
+        el.style.display = 'flex';
+    else
+        el.style.display = 'none';
+        
+}
+
+function changeFont(sym){
+    let hymn = document.getElementsByClassName('hymn')[0];
+    let size = window.getComputedStyle(hymn).fontSize;
+    size = parseInt(size);
+    if(sym == '+')
+        size+= 2;
+    else
+        size-= 2;
+    size += 'px';
+    console.log(size);
+    hymn.style.fontSize = size;
+}
