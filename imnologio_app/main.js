@@ -55,13 +55,11 @@ function toolbarToggle(){
 
 function changeFont(sym){
     let hymn = document.getElementsByClassName('hymn')[0];
-    let size = window.getComputedStyle(hymn).fontSize;
-    size = parseInt(size);
-    if(sym == '+')
-        size+= 2;
-    else
-        size-= 2;
-    size += 'px';
+    let size = window.getComputedStyle(hymn).getPropertyValue('font-size');
     console.log(size);
+    size = size.split('p')[0];
+    if(sym=='+') size++;
+    else size--;
+    size+='px';
     hymn.style.fontSize = size;
 }
