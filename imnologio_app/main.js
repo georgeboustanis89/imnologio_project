@@ -63,3 +63,53 @@ function changeFont(sym){
     size+='px';
     hymn.style.fontSize = size;
 }
+
+var circle = ["A", "A#", "B", "C", "C#", "D", "D#", "E", "F", "F#", "G", "G#"];
+
+function changeChord(ch,val){
+    let point;
+    let key;
+    let rem;
+
+
+    if(ch.split('#').length > 1){
+        key = ch.slice(0,2);
+        rem = ch.slice(2);
+    }
+    else{
+        key = ch[0];
+        rem = ch.slice(1);
+    }
+
+    circle.forEach(function(el,ind){
+        if(el == key) point = ind;
+    });
+    return (circle[(point+parseInt(val))%12] + rem);
+}
+
+function changeChordLine(line,val){
+    let out = '';
+    let arrCh = line.split(' ');
+    arrCh.forEach(el => {
+        if(el == '')
+            out +=  ' ';
+        else
+            out += changeChord(el,val);
+    });
+    console.log(out.length);
+    return out;
+
+}
+
+function changeAllChords(val){
+    let chArr = new Array();
+    let list = document.getElementsByClassName('chords');
+    for(key of list){
+        key.innerHTML = changeChordLine(key.innerHTML,val);
+        // chArr.push(key.innerHTML);
+    }
+    // chArr = chArr.map(el => {
+    //     return changeChordLine(el,val);
+    // });
+
+}
