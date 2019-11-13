@@ -82,14 +82,18 @@ function changeChord(ch,val){
     circle.forEach(function(el,ind){
         if(el == key) point = ind;
     });
+
     return (circle[(point+parseInt(val))%12] + rem);
 }
 
 function changeChordLine(line,val){
-    
     let arrCh = line.split(/[\s-]/).filter(el => {
         if( el != '') return el;
     });
+
+    arrCh = arrCh.filter(isUnique);
+
+    console.log(arrCh);
 
     let arrChNew = arrCh.map(el => {
         return changeChord(el,val);
@@ -98,7 +102,6 @@ function changeChordLine(line,val){
     arrChNew.forEach((el,ind) => {
         line = line.replace(arrCh[ind],el);
     });
-
     return line;
 
 }
@@ -114,4 +117,8 @@ function changeAllChords(val){
     //     return changeChordLine(el,val);
     // });
 
+}
+
+function isUnique(value, ind, self){
+    return (self.indexOf(value) == ind);
 }
