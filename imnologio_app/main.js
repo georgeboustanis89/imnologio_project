@@ -56,7 +56,6 @@ function toolbarToggle(){
 function changeFont(sym){
     let hymn = document.getElementsByClassName('hymn')[0];
     let size = window.getComputedStyle(hymn).getPropertyValue('font-size');
-    console.log(size);
     size = size.split('p')[0];
     if(sym=='+') size++;
     else size--;
@@ -70,7 +69,6 @@ function changeChord(ch,val){
     let point;
     let key;
     let rem;
-
 
     if(ch.split('#').length > 1){
         key = ch.slice(0,2);
@@ -88,16 +86,20 @@ function changeChord(ch,val){
 }
 
 function changeChordLine(line,val){
-    let out = '';
-    let arrCh = line.split(' ');
-    arrCh.forEach(el => {
-        if(el == '')
-            out +=  ' ';
-        else
-            out += changeChord(el,val);
+    
+    let arrCh = line.split(/[\s-]/).filter(el => {
+        if( el != '') return el;
     });
-    console.log(out.length);
-    return out;
+
+    let arrChNew = arrCh.map(el => {
+        return changeChord(el,val);
+    });
+    
+    arrChNew.forEach((el,ind) => {
+        line = line.replace(arrCh[ind],el);
+    });
+
+    return line;
 
 }
 
