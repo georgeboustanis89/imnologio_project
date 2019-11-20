@@ -11,7 +11,7 @@
     <div id="wrapper">
         <div class="header-container">
             <!-- G KEY IMAGE | ONCLICK -> showContents -->
-            <a href="#" onclick="sendRequest('./data.json',showContents);">
+            <a href="#" onclick="initSize();sendRequest('./data.json',showContents);">
                 <img src="img/solkey.png" alt="logo" class="header-img">
             </a>
 
@@ -24,16 +24,10 @@
 
         <div class="toolbar">
             <div class="tool">
-                <div class="toolTitle">ΣΥΓΧΟΡΔΙΕΣ</div>
-                <div class="tool-border"></div>
-                <button id="bpch" onclick="changeAllChords(1);">+</button>
+                <div class="toolTitle" onclick='changeAllChords(1);'>ΣΥΓΧΟΡΔΙΕΣ</div>
             </div>
             <div class="tool">
-                <button id="bmfont" onclick='changeFont("-");'>-</button>
-                <div class="tool-border"></div>
-                <div class="toolTitle">ΜΕΓΕΘΟΣ</div>
-                <div class="tool-border"></div>
-                <button id="bpfont" onclick='changeFont("+");'>+</button>
+                <div class="toolTitle" onclick='changeFont();'>ΜΕΓΕΘΟΣ</div>
             </div>
         </div>
 

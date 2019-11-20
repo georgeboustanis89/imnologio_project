@@ -53,15 +53,21 @@ function toolbarToggle(){
         
 }
 
-function changeFont(sym){
+var size = ['150%','170%','190%','200%','120%'];
+var sizeInd = 0;
+
+function changeFont(){
     let hymn = document.getElementsByClassName('hymn')[0];
-    let size = window.getComputedStyle(hymn).getPropertyValue('font-size');
-    size = size.split('p')[0];
-    if(sym=='+') size++;
-    else size--;
-    size+='px';
-    hymn.style.fontSize = size;
+    // let size = window.getComputedStyle(hymn).getPropertyValue('font-size');
+    // size = size.split('p')[0];
+    // if(sym=='+') size++;
+    // else size--;
+    // size+='px';
+    hymn.style.fontSize = size[(++sizeInd)%5];
+    console.log(sizeInd);
 }
+
+function initSize(){sizeInd = 0;}
 
 var circle = ["A", "A#", "B", "C", "C#", "D", "D#", "E", "F", "F#", "G", "G#"];
 

@@ -27,14 +27,16 @@ a{
     height: 100%;
 }
 
-.header-img:active{
+.header-img:active, .toolTitle:active{
     transform: scale(1.3,1.3);
 }
 
 .header-search{
     margin: auto;
-    width: 10em;
+    padding-left: 10px;
+    width: 20em;
     font-size: 20px;
+    height: 45px;
     outline: none;
 }
 
@@ -45,7 +47,6 @@ a{
     display: flex;
     justify-content: space-between;
     background-color: rgba(211, 211, 211, 0.432);
-    overflow: auto;
 }
 
 .tool{
@@ -54,6 +55,7 @@ a{
     justify-content: flex-start;
     /* overflow: auto; */
 }
+
 
 .tool button{
     align-self: center;
@@ -75,7 +77,6 @@ a{
 .toolTitle{
     display: block;
     padding: 0px 10px;
-    background-color: red;
     text-align: center;
     line-height: 3em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -95,14 +96,18 @@ a{
 
 .hymn-title{
     text-align: center;
-    font-size:1.9em;
+    font-size:xx-large;
     color:white;
     background-color: lightblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px;
 }
 
 .hymn{
+    padding-top: 25px;
+    padding-left: 25px;
     overflow: scroll;
-    font-size: 20px;
+    font-size: 150%;
 }
 
 .hymn-button{
@@ -137,21 +142,21 @@ a{
 }
 
 .border{
-    border: solid black 2px;
+    border: solid rgb(217, 222, 229) 2px;
     /* margin-top: 2px; */
 }
 
 #sendReq{
-    height: 30px;
+    height: 45px;
     width: 4em;
     margin: auto;
     border: none;
     background-color: white;
     color: #4593c0;
-    border-radius: 50px;
+    border-radius: 13px;
     box-shadow: 0 5px #999;
     outline: none;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 700;
 }
 
