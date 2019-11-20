@@ -34,9 +34,9 @@ a{
 .header-search{
     margin: auto;
     padding-left: 10px;
-    width: 20em;
+    width: 10em;
     font-size: 20px;
-    height: 45px;
+    height: 40px;
     outline: none;
 }
 
@@ -166,11 +166,11 @@ a{
 
 @media (max-width: 456px){
     .lyrics,.chords{
-        font-size: 1.1em;
+        font-size: 80%;
     }
 
     #sendReq{
-        font-size: 9px;
+        font-size: 15px;
     }
 
     #wrapper{
