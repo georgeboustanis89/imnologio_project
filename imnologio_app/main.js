@@ -76,16 +76,17 @@ function changeChord(ch,val){
     let key;
     let rem;
 
+    // e.g. A#m -> key: A# - rem: m
     if(ch.split('#').length > 1){
         key = ch.slice(0,2);
         rem = ch.slice(2);
     }
+    // e.g. G7m -> key: G - rem: 7m
     else{
         key = ch[0];
         rem = ch.slice(1);
     }
 
-    
     circle.forEach(function(el,ind){
         if(el == key)
             point = ind;

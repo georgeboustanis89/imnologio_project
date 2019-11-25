@@ -14,23 +14,26 @@
             <a href="#" onclick="initSize();sendRequest('./data.json',showContents);">
                 <img src="img/solkey.png" alt="logo" class="header-img">
             </a>
-
+            <!-- FIND HYMN textfield -->
             <input type="text" name="" id="" class="header-search"
             placeholder="Αναζήτηση Ύμνου...">
+            <!-- OK button (right corner) -->
             <button id="sendReq" onclick='toolbarToggle();'>OK</button>
         </div>
 
-        <div class="border"></div>
-
+        <!--  TOOLBAR for transposing and font size change -->
         <div class="toolbar">
+            <!-- CHORD TRANPOSER -->
             <div class="tool">
-                <div class="toolTitle" onclick='changeAllChords(1);'>ΣΥΓΧΟΡΔΙΕΣ</div>
-            </div>
+                    <div class="toolTitle" onclick='changeAllChords(1);'>ΣΥΓΧΟΡΔΙΕΣ</div>
+                </div>
+            <!-- FONT SIZE CHANGER -->
             <div class="tool">
                 <div class="toolTitle" onclick='changeFont();'>ΜΕΓΕΘΟΣ</div>
             </div>
         </div>
 
+        <!-- JUST A TEST! -->
         <div class="content">Welcome!</div>
     </div>
 </body>
